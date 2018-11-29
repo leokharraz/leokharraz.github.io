@@ -1,0 +1,61 @@
+.wrapper {
+    font-family: Helvetica, sans-serif;
+    background: rgb(243, 243, 243);
+    width: 75%;
+    margin: 0 auto;
+    padding: 15px;
+    text-align: center;
+}
+
+li {
+    display: inline;
+    padding: 5px;
+}
+
+ul {
+    text-align: center;
+    font-weight: bold;
+}
+
+img{
+    width: 75%;
+    margin: 0 auto;
+    display: block;
+}
+
+.maui-aspen {
+    background: rgb(196, 222, 252);
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 50px;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.Reykjavik {
+    background: rgb(194, 242, 227);
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.lightblue {
+    background: rgb(120, 233, 252);
+}
+
+.forestgreen {
+    background: rgb(9, 202, 159);
+}
+
+.title {
+    background: rgb(9, 202, 159);
+    color: white;
+    padding: 5px;
+}

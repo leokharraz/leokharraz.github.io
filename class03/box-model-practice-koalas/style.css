@@ -1,0 +1,21 @@
+body {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+h1 {
+  border-left: 30px solid darkgreen;
+  border-right: 30px solid darkgreen;
+  text-align: center;
+}
+
+.box {
+  border-right: 3px solid lightgreen;
+  border-left: 3px solid lightgreen;
+  border-top: 5px solid orangered;
+  border-bottom: 5px solid orangered;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-right: 5px;
+  padding-left: 5px;
+}

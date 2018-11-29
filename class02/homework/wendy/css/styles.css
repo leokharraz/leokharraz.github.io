@@ -1,0 +1,30 @@
+body {
+    font-family: sans-serif, Helvetica;
+}
+h1{
+    text-align: center;
+}
+h4{
+    text-align: center;
+}
+
+p{
+    text-align: inherit;
+}
+
+h3{
+    color: rgba(100,100,100,.3);
+}
+
+span{
+    font-weight: bold;
+
+}
+
+ul{
+    list-style: square;
+}
+
+a{
+    color: #33CC99;
+}
