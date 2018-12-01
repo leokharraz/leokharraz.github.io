@@ -1,58 +1,65 @@
-.wrapper{
-    max-width: 720px; 
+.wrapper {
+    max-width: 720px;
     padding: 54px;
     font-family: "Lato";
     line-height: 1.5;
     margin: 0 auto;
     border-left: 6px solid #e2231a;
-    font-weight: normal; 
+    font-weight: normal;
 }
 
-
-.nav-link{
+.nav-link {
     color: #dddddd;
 }
-.nav-link:hover{
+
+.nav-link:hover {
     color: black;
 }
 
-.date{
+.date {
     color: #cccccc;
 }
-.heading{
+
+.heading {
     color: black;
 }
-.font{
+
+.font {
     font-family: 'Lato'
 }
-h1{
+
+h1 {
     color: red;
 }
-ul{
-    padding-left:0px;
+
+ul {
+    padding-left: 0px;
 }
-li{
+
+li {
     display: inline;
     padding-right: 10px;
     font-size: 20px;
-    
 }
 
-a{
-    color:#e2231a;
+a {
+    color: #e2231a;
 }
-a:hover{
+
+a:hover {
     color: #aa0000;
 }
-img{
+
+img {
     max-width: 720px;
     margin: 0 auto;
 }
-.textalign-right{
+
+.textalign-right {
     text-align: right;
 }
 
-article{
+article {
     padding: 10px;
     margin: 10px;
 }
