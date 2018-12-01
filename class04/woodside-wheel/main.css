@@ -62,4 +62,9 @@ img {
 article {
     padding: 10px;
     margin: 10px;
+    color: black;
+}
+
+.copyright{
+    color: #bbbbbb;
 }
