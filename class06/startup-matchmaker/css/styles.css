@@ -1,0 +1,130 @@
+/* FONT FAMILY HELPERS :)
+font-family: 'Oswald', sans-serif;
+font-family: 'Merriweather', serif;
+font-family: 'Source Sans Pro', sans-serif; */
+
+body {
+  font-family: Source Sans Pro;
+  background: rgb(240, 239, 239);
+}
+h1 {
+  font-family: "Merriweather", serif;
+  color: yellow;
+  margin-left: 20px;
+}
+.wrapper {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  background: black;
+  border-bottom: 5px solid yellow;
+}
+
+.main {
+  display: flex;
+  justify-content: flex-end;
+  background: url(../img/coworking.jpg) no-repeat;
+  align-items: flex-end;
+  background-size: cover;
+  background-position: center;
+  flex-direction: column;
+}
+.smallbox {
+  text-align: left;
+  padding-left: 10px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-right: 20px;
+  margin: 80px 30px 80px 643px;
+  background: rgba(255, 255, 255, 0.61);
+}
+
+.crossed {
+  text-decoration: line-through;
+  color: gray;
+}
+h2 {
+  font-size: 25px;
+}
+.underline {
+  text-decoration: underline;
+  color: yellow;
+}
+
+.nav {
+  font-family: "Oswald";
+  margin-right: 30px;
+
+}
+.navlinks {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  padding-right: 20px;
+}
+.tagline {
+  font-family: "Merriweather";
+  background: #c6c6c6;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+.search {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.format {
+  padding: 5px;
+  display: flex;
+  padding-top: 21px;
+  padding-left: 13px;
+  padding-right: 30px;
+  flex-direction: column;
+  margin-bottom: 25px;
+  margin-top: 25px
+}
+
+.rline{
+    border-right: 1px solid grey;
+}
+
+.l-line{
+    border-left: 1px solid grey;
+}
+
+.button {
+  text-align: center;
+  padding: 14px 0;
+  margin: 28px 28px;
+  font-family: "Oswald";
+  color:black;
+  background: #c6c6c6;
+  border-radius: 5px;
+}
+a{
+    text-decoration: none;
+}
+.design{
+    margin-bottom: 30px;
+}
+
+.yellow {
+  background: yellow;
+}
+
+.footer {
+  color: white;
+  background: black;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 20px;
+}
