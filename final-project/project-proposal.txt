@@ -1,2 +1,2 @@
 Roulette: 
-For the final project on front end web development, i'll try to code a simple roulette game where you can bet on BLACK, RED and GREEN.
+For the final project on front end web development, i'll try to code a simple roulette game where you can bet on BLACK, RED and GREEN. 
