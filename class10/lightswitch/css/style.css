@@ -5,7 +5,9 @@ body {
 .lights-off {
   background: black;
 }
-
+.lights-on{
+	background: white;
+}
 #lightswitch {
 	font-size: 200px;
 	padding: 50px;

@@ -2,15 +2,19 @@ $(document).ready(function() {
   let lights = "on";
   $("#lightswitch").click(function() {
     if (lights === "on") {
-      $("#lightswitch").css("background", "white");
-      $("#lightswitch").css("color", "black");
-	  $("body").css("background", "black");
+      $('#lightswitch').removeClass('switch-on');
+      $("#lightswitch").addClass('switch-off');
+
+      
+    $("body").addClass('lights-off');
+    $("body").removeClass('lights-on');
 
       lights = "off";
     } else {
-      $("#lightswitch").css("background", "black");
-      $("#lightswitch").css("color", "white");
-      $("body").css("background", "white");
+      $("#lightswitch").removeClass('switch-off')
+      $("#lightswitch").addClass('switch-on');
+      $("body").addClass('lights-on');
+      $("body").removeClass("lights-off");
       lights = "on";
 	}
 	$(this).html(lights);
