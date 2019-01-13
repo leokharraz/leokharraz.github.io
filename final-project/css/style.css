@@ -59,12 +59,16 @@ a:hover{
     padding: 10px;
     border-radius: 10px;
     cursor: pointer;
+    border: none;
+    box-shadow: 5px darkgray;
 }
 .bet-button{
     background: lightgrey;
     padding: 8px;
     font-size: 18px;
     border-radius: 7px;
+    border: none;
+    cursor: pointer;
 }
 .bet-amount{
     font-size: 20px;
