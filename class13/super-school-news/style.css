@@ -1,0 +1,71 @@
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+body{
+  background: grey;
+}
+
+header {
+  background-color: yellow;
+  padding: 10px 25px;
+  display: flex;
+  justify-content: space-between;
+}
+
+header h1 {
+  font-size: 30px;
+}
+
+header nav {
+  margin-top: 6px;
+}
+
+header nav a {
+  color: black;
+  text-decoration: none;
+  font-size: 20px;
+  margin-left: 20px;
+}
+
+section {
+  background-color: black;
+  display: flex;
+  padding: 10px;
+
+}
+
+article {
+  background-color: white;
+  /* we will talk about flex-shrink and flex-grow next! */
+  flex-shrink: 1;
+  flex-grow: 1;
+  width: 400px;
+  padding: 12px;
+  box-sizing: border-box;
+}
+
+/* targets the 1st article; nth-child(2) would target the 2nd article*/
+article:nth-child(1) {
+  border-right: 10px solid black;
+}
+
+article h1 {
+  font-size: 20px;
+  text-align: center;
+  padding: 5px 0;
+}
+
+@media (max-width: 700px){
+  section {
+    display: block;
+  }
+  article {
+    width: 100%;
+  }
+
+  article:nth-child(1){
+    border-right: none;
+    margin-bottom: 10px;
+  }
+}

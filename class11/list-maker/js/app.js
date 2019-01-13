@@ -9,16 +9,25 @@
 // Bonus: Focus on #item after the item is added (research jQuery focus method)
 // Itermediate Bonus: If the value of #item is blank, do not append the <li> and alert user (if/else conditions)
 // Legendary Bonus: Remove individual <li> elements when they are clicked (will have to use $(this) + research how to remove dynamically added elements)
-$('#clickme').click(handleClick);
-function handleClick(){
-    let newItem = $('#item').val();
-    console.log(newItem);
-    appendItem(newItem);
-    $('#item').val('');
+$("#clickme").click(handleClick);
+function handleClick() {
+  let newItem = $("#item").val();
+  console.log(newItem);
+  appendItem(newItem);
+  $("#item").val("");
 }
-function appendItem(newItem){
-    $('#list').append(`<li>${newItem}</li>`);
+function appendItem(newItem) {
+  if ($("#item").val() <= 0) {
+    alert("Please enter something to add");
+  } else {
+    $("#list").append(`<li>${newItem}</li>`);
+  }
 }
+
+$("li").click(function () {
+    $(this).remove();
+});
+
 // To Get Started:
 // 1. Attach a .click() event to #clickme
 // 2. This .click() should call a function, named handleClick

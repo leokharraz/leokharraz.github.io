@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Simple Roulette</title>
+    <link href="https://fonts.googleapis.com/css?family=Staatliches" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class=wrapper>
+    <header class=header>
+        <h1 class='headline'>Simple Roulette!</h1>
+        <nav class='nav'> 
+            <span class='nav-links'><a href="#">Play</a> </span>
+            <span class='nav-links'><a href="#">How to Play</a></span>
+            <span class='nav-links'><a href="#">About</a></span>
+        </nav>
+    </header>
+
+    <main class='main'>
+        <picture>
+            <img class='wheel' src="img/roulette-wheel.png" alt="roulette-wheel">
+        </picture>
+        
+        <section>
+            <h3>Your Money: 10000$</h3>
+            <input type='text' value='Your Bet...' class='bet-amount' onfocus="this.value=''">
+            <input type="button" value="X2" class='bet-button'>
+            <input type="button" value="1/2" class='bet-button'>
+            <input type="button" value="Clear" class='bet-button'>
+            <br><br>
+            <input type="button" value="Bet on Black (X2)" class='button black'>
+            <input type="button" value="Bet on Green (X14)" class='button green'>
+            <input type="button" value="Bet on Red (X2)" class='button red'>
+            
+        </section>
+    </main>
+    </div>
+</body>
+</html>

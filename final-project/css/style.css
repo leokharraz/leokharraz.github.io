@@ -1,0 +1,73 @@
+body {
+  font-family: "Staatliches", "cursive";
+  background-image: radial-gradient(grey, darkgray, black);
+  width: 90%;
+}
+
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 10px;
+}
+.headline{
+    font-size: 35px;
+}
+.header {
+  display: flex;
+
+  justify-content: space-between;
+  
+}
+.nav {
+  display: flex;
+  width: 40%;
+  justify-content: flex-end;
+}
+.nav-links {
+  margin-left: 10px;
+  font-size: 30px;
+  align-self: center;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+a:hover{
+    color: darkslategrey;
+}
+.wheel {
+  width: 65%;
+}
+.main{
+    text-align: center;
+}
+.red{
+    background: red;
+    
+}
+.black{
+    background: black;
+    
+}
+.green{
+    background: green;
+    
+}
+.button{
+    font-size: 16px;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.bet-button{
+    background: lightgrey;
+    padding: 8px;
+    font-size: 18px;
+    border-radius: 7px;
+}
+.bet-amount{
+    font-size: 20px;
+    background: rgba(170,170,170,0.5);
+    box-shadow: 1px 1px black;
+}

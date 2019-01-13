@@ -1,0 +1,1 @@
+Make this static page responsive based on the two spec images!
