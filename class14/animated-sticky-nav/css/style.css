@@ -1,0 +1,30 @@
+.wrapper {
+	text-align: center;
+	padding-top: 150px;
+}
+
+header {
+	background: SeaGreen;
+	position: fixed;
+	height: 75px;
+	width: 100%;
+	top: 0;
+	left: 0;
+	color: white;
+	text-align: center;
+	font-size: 75px;
+	line-height: 1;
+	transition: all .4s;
+}
+
+img {
+	width: 70%;
+	display: block;
+	margin: 30px auto 0;
+}
+
+.small-header{
+	height: 30px;
+	background-color: violet;
+	font-size: 30px;
+}
