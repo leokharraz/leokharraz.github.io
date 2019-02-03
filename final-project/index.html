@@ -1,42 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Simple Roulette</title>
-    <link href="https://fonts.googleapis.com/css?family=Staatliches" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-    <div class=wrapper>
-    <header class=header>
-        <h1 class='headline'>Simple Roulette!</h1>
-        <nav class='nav'> 
-            <span class='nav-links'><a href="#">Play</a> </span>
-            <span class='nav-links'><a href="#">How to Play</a></span>
-            <span class='nav-links'><a href="#">About</a></span>
+    <link
+      href="https://fonts.googleapis.com/css?family=Staatliches"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <h1 class="headline">Simple Roulette!</h1>
+        <nav class="nav">
+          <span class="nav-links" id='responsive'><a href="#">Play</a> </span>
+          <span class="nav-links" id='responsive2'><a href="#">How to Play</a></span>
+          <span id='responsive3' class="nav-links"><a href="#">About</a></span>
         </nav>
-    </header>
+      </header>
 
-    <main class='main'>
-        <picture>
-            <img class='wheel' src="img/roulette-wheel.png" alt="roulette-wheel">
-        </picture>
-        
+      <div class="last-winnings">
+        <div id="first"><span class="winners" id="first-html"></span></div>
+        <div id="second"><span class="winners" id="second-html"></span></div>
+        <div id="third"><span class="winners" id="third-html"></span></div>
+        <div id="fourth"><span class="winners" id="fourth-html"></span></div>
+        <div id="fith"><span class="winners" id="fith-html"></span></div>
+      </div>
+
+      <main class="main">
+        <div class="background-img">
+          <canvas
+            id="canvas"
+            data-responsiveMinWidth="180"
+            data-responsiveScaleHeight="true"
+            data-responsiveMargin="50"
+          >
+          </canvas>
+        </div>
         <section>
-            <h3>Your Money: 10000$</h3>
-            <input type='text' value='Your Bet...' class='bet-amount' onfocus="this.value=''">
-            <input type="button" value="X2" class='bet-button'>
-            <input type="button" value="1/2" class='bet-button'>
-            <input type="button" value="Clear" class='bet-button'>
-            <br><br>
-            <input type="button" value="Bet on Black (X2)" class='button black'>
-            <input type="button" value="Bet on Green (X14)" class='button green'>
-            <input type="button" value="Bet on Red (X2)" class='button red'>
-            
+          <h3>Your Money:<span id="bank-account"> 150.00</span>$</h3>
+          <input
+            type="text"
+            value="Your Bet..."
+            class="bet-amount"
+            onfocus="this.value=''"
+          />
+          <input type="button" value="X2" class="bet-button" id="x2" />
+          <input type="button" value="1/2" class="bet-button" id="half" />
+          <input type="button" value="Clear" class="bet-button" id="clear" />
+          <br /><br />
+          <input
+            type="button"
+            value="Bet on Black (X2)"
+            class="button black"
+            id="black"
+          />
+          <input
+            type="button"
+            value="Bet on Green (X14)"
+            class="button green"
+            id="green"
+          />
+          <input
+            type="button"
+            value="Bet on Red (X2)"
+            class="button red"
+            id="red"
+          />
         </section>
-    </main>
+      </main>
+      <div class="winners-announcment">
+        <h1 class="announcment">You <span class="winlose"></span></h1>
+      </div>
     </div>
-</body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+    <script src="js/jquery-1.10.2.min.js"></script>
+    <script src="js/Winwheel.js"></script>
+    <script src="js/app.js"></script>
+  </body>
 </html>

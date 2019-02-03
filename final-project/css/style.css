@@ -9,69 +9,212 @@ body {
   margin: 0 auto;
   padding: 10px;
 }
-.headline{
-    font-size: 35px;
+.headline {
+  font-size: 35px;
+}
+h3 {
+  font-size: 30px;
 }
 .header {
   display: flex;
 
   justify-content: space-between;
-  
 }
 .nav {
   display: flex;
   width: 40%;
   justify-content: flex-end;
+  font-size: 30px;
 }
 .nav-links {
   margin-left: 10px;
-  font-size: 30px;
+  
   align-self: center;
 }
-a{
-    text-decoration: none;
-    color: black;
+a {
+  text-decoration: none;
+  color: black;
 }
-a:hover{
-    color: darkslategrey;
+a:hover {
+  color: darkslategrey;
 }
-.wheel {
-  width: 65%;
+canvas {
+  width: 80%;
 }
-.main{
-    text-align: center;
-}
-.red{
-    background: red;
+/* .background-img{
+    background-image: url("../img/roulette-wheel.png");
+    background-repeat: no-repeat;
+    background-position: center; 
     
+
+} */
+section{
+    margin-bottom: 0px;
 }
-.black{
-    background: black;
-    
+.main {
+  text-align: center;
 }
-.green{
-    background: green;
-    
+.red {
+  background: red;
 }
-.button{
-    font-size: 16px;
-    color: white;
-    padding: 10px;
-    border-radius: 10px;
-    cursor: pointer;
-    border: none;
-    box-shadow: 5px darkgray;
+.black {
+  background: black;
 }
-.bet-button{
-    background: lightgrey;
-    padding: 8px;
-    font-size: 18px;
-    border-radius: 7px;
-    border: none;
-    cursor: pointer;
+.green {
+  background: green;
 }
-.bet-amount{
-    font-size: 20px;
-    background: rgba(170,170,170,0.5);
-    box-shadow: 1px 1px black;
+.button {
+  font-size: 16px;
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  border: none;
+  box-shadow: 5px darkgray;
+}
+.bet-button {
+  background: lightgrey;
+  padding: 8px;
+  font-size: 18px;
+  border-radius: 7px;
+  border: none;
+  cursor: pointer;
+}
+.winners {
+  display: block;
+  align-self: center;
+  font-size: 40px;
+}
+.bet-amount {
+  font-size: 20px;
+  background: rgba(170, 170, 170, 0.5);
+  box-shadow: 1px 1px black;
+}
+
+.last-winnings {
+  display: flex;
+  width: 60%;
+  height: 100px;
+  box-sizing: border-box;
+  border: 2px solid white;
+  justify-content: space-evenly;
+  margin: 0 auto;
+  margin-bottom: 25px;
+  border-radius: 20px;
+}
+
+#first,
+#second,
+#third,
+#fourth,
+#fith {
+  width: 20%;
+  height: 100%;
+  text-align: center;
+  display: flex;
+  align-content: baseline;
+  justify-content: center;
+  font-size: 30px;
+  color: white;
+}
+
+#first,
+#second,
+#third,
+#fourth {
+  border-right: 2px dotted white;
+}
+
+.first {
+  background: black;
+}
+
+.third {
+  background: green;
+}
+
+#first,
+#fith {
+  border-radius: 10px;
+}
+
+.winners-announcment {
+  text-align: center;
+  display: none;
+}
+
+.win {
+  -webkit-animation: winanimation 3s infinite;
+  -moz-animation: winanimation 3s infinite;
+  -o-animation: winanimation 3s infinite;
+  animation: winanimation 3s infinite;
+}
+
+.lose {
+  color: red;
+}
+
+.winlose {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+@-webkit-keyframes winanimation {
+  0% {
+    color: green;
+    display: inline;
+  }
+  65% {
+    color: blue;
+  }
+  100% {
+    color: orange;
+  }
+}
+@-moz-keyframes winanimation {
+  0% {
+    color: green;
+    display: inline;
+  }
+  65% {
+    color: blue;
+  }
+  100% {
+    color: orange;
+  }
+}
+@-o-keyframes winanimation {
+  0% {
+    color: green;
+    display: inline;
+  }
+  65% {
+    color: blue;
+  }
+  100% {
+    color: orange;
+  }
+}
+@keyframes winanimation {
+  0% {
+    color: green;
+
+    display: inline;
+  }
+  50% {
+    color: blue;
+  }
+  100% {
+    color: orange;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+    .nav-links{
+        font-size: 14px;
+    }
+
+    #responsive, #responsive2, #responsive3{
+        font-size: 14px;
+    }
 }

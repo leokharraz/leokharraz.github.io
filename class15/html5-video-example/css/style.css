@@ -1,0 +1,22 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: 'Pacifico', cursive;
+}
+
+video {
+	width: 100%;
+}
+
+.box{
+	display: flex;
+	position: relative;
+	justify-content: center;
+	align-items: center;
+	border: 5px solid green;
+}
+.header{
+	position: absolute;
+	font-size: 120px;
+	color: rgba(24, 94, 3, 0.4); 
+}
