@@ -1,0 +1,27 @@
+body {
+  font-family: "Staatliches", "cursive";
+  background: grey;
+
+}
+
+.wrapper{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.about-html{
+    margin: 0 auto;
+    padding-right: 250px;
+    font-size: 25px;
+}
+
+
+.contact{
+    display: block;
+    color: blue;
+}
+.contact:hover{
+    color: red;
+}
+

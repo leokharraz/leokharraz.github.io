@@ -78,7 +78,7 @@ function startGameBlack() {
   bet = $(".bet-amount").val();
   bet = parseInt(bet);
 
-  if (startMoney > 0 && startMoney >= bet) {
+  if (startMoney > 0 && startMoney >= bet && bet != 0) {
     color = "black";
     startMoney = startMoney - bet;
     startMoney = parseInt(startMoney);
@@ -205,16 +205,16 @@ function makeWinnerList(winningSegment) {
   } else if (counter == 6) {
     winners.shift();
     winners.push(winningSegment);
-    $("#first").css("background", winners[0].fillStyle);
-    $("#second").css("background", winners[1].fillStyle);
+    $("#first").css("background", winners[4].fillStyle);
+    $("#second").css("background", winners[3].fillStyle);
     $("#third").css("background", winners[2].fillStyle);
-    $("#fourth").css("background", winners[3].fillStyle);
-    $("#fith").css("background", winners[4].fillStyle);
+    $("#fourth").css("background", winners[1].fillStyle);
+    $("#fith").css("background", winners[0].fillStyle);
 
-    $("#first-html").html(`${winners[0].text}`);
-    $("#second-html").html(`${winners[1].text}`);
+    $("#first-html").html(`${winners[4].text}`);
+    $("#second-html").html(`${winners[3].text}`);
     $("#third-html").html(`${winners[2].text}`);
-    $("#fourth-html").html(`${winners[3].text}`);
-    $("#fith-html").html(`${winners[4].text}`);
+    $("#fourth-html").html(`${winners[1].text}`);
+    $("#fith-html").html(`${winners[0].text}`);
   }
 }
